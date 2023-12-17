@@ -45,8 +45,3 @@ print('Новая матрица:\n', A)
 with open(file_name_2, 'w') as f:
     func.write_matrix(A, f)
 
-# with open(file_name_2, 'w') as f:
-#     for row in A:
-#         line = ' '.join(map(str, row))
-#         f.write(line + '\n')
-
