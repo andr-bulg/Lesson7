@@ -6,3 +6,14 @@
 Выведите содержимое полученного файла на экран.
 """
 
+import os
+dir_name = 'C:/test_30122023/Work/'
+s = "--- truncate here ---"
+
+with open(dir_name + 'w.txt', 'r+') as f:
+    # Перемещение условного курсора в заданную позицию
+    f.seek(10)
+    f.write(s)
+
+# Обрезание файла w.txt до указанной длины
+os.truncate(dir_name + 'w.txt', 10 + len(s))
